@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="./BG.mp4" type="video/mp4">
+    </video>
+
+<div class="container">
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="city"
+        placeholder="Enter City Name">
+
+        <button onclick="getWeather()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+    </div>
+
+    <div class="weather-card">
+
+        <img
+        id="weatherIcon"
+        src="./weather.jpg"
+        alt="weather">
+
+        <h1 id="temperature">--°C</h1>
+
+        <h2 id="cityName">
+            Search a City
+        </h2>
+
+        <p id="description">
+            Weather Description
+        </p>
+
+        <div class="details">
+
+            <div class="detail-box">
+                <i class="fa-solid fa-water"></i>
+                <h3 id="humidity">--%</h3>
+                <p>Humidity</p>
+            </div>
+
+            <div class="detail-box">
+                <i class="fa-solid fa-wind"></i>
+                <h3 id="wind">-- km/h</h3>
+                <p>Wind</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
